@@ -1,0 +1,13 @@
+rom django.urls import path
+from . import views
+urlpatterns = [  path('S_Form', views.St_Form, name='NEW_ST_RECORD'),
+    path('BkForm', views.BkForm, name='NEW_B_RECORD'),
+    path('BIssueForm', views.BIssueForm, name='NEW_BI_RECORD'),
+    path('VStudents', views.view_st, name='SHOW RECORD'),
+    path('ViewBk', views.view_b, name='SHOW BOOK RECORD'),
+    path('ViewBIssue', views.view_bissue, name='SHOW ISSUED RECORD'),
+    path('', views.index, name='index'),
+    path('Student', views.Student, name='Student'),
+    path('Book', views.Book, name='Book'),
+    path('B_Issue', views.BIssue, name='Book Issue'),
+]
